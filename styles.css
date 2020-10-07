@@ -1,0 +1,97 @@
+body {
+  background-image: linear-gradient(80deg, purple 10%, transparent 95%),
+   url("https://cdn.pixabay.com/photo/2012/12/09/00/16/smoke-69124_1280.jpg");
+  color: white;
+  
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  margin: auto;
+}
+
+/*centre everything and move it up but not right against h1 */
+
+.smokes {
+  margin: auto;
+  
+  
+  margin-top: 40vh;
+
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+  margin-top: -25vh;
+  font-size: clamp(18px, 4vw, 30px);
+  line-height: 1.5rem;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.info {
+  font-family: 'Slabo 27px', serif;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  font-size: clamp(12px, 4vw, 20px);
+  line-height: 1.5rem;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/*get rid of ugly border and centre it all */
+
+fieldset {
+  border: none;
+  width: 40ch;
+
+  margin: auto;
+}
+
+/* make text fields super flexible */
+
+.text-fields p {
+  display: flex;
+}
+
+.text-fields p label {
+  width: 11ch;
+}
+
+/*only want border on the bottom of the input */
+
+.text-fields p input {
+  flex: 1;
+  text-align: center;
+  color: white;
+
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid white;
+}
+
+/*so when you type there's no border thing */
+
+input:focus {
+  outline: none;
+  text-align: center;
+}
+
+.button {
+  background-color: white;
+  border-radius: 5px;
+}
+
+/*make it colourful when i hover */
+
+.button:hover {
+  background-color: skyblue;
+}
+
+/*making the asterisk red with no underline dot thing */
+
+abbr {
+  color: red;
+  text-decoration: none;
+}
